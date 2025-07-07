@@ -17,6 +17,22 @@
       <!-- 질문 목록이 여기에 표시됩니다 -->
     </ul>
   </div>
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyADu7LdTu4zitz-0ZLTxlB4eEgb62mpUHo",
+      authDomain: "cursor-board.firebaseapp.com",
+      projectId: "cursor-board",
+      storageBucket: "cursor-board.firebasestorage.app",
+      messagingSenderId: "106921455944",
+      appId: "1:106921455944:web:4af7358de13303ac53c37d",
+      measurementId: "G-TMNQ8D0YLE"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
